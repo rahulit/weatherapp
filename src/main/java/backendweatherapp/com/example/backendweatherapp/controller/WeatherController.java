@@ -48,7 +48,7 @@ public class WeatherController {
 
         /*  Parse the github JSON file of US State capitals */
         JSONParser jsonParser = new JSONParser();
-        Resource resource = resourceLoader.getResource("classpath:us-state-capitals.json");
+        Resource resource = resourceLoader.getResource("classpath:static/us-state-capitals.json");
         InputStream input = resource.getInputStream();
         File file = resource.getFile();
         FileReader reader = new FileReader(file);
